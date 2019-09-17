@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GiffyWebApp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- STYLES -->
+    <style>
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-auto-rows: minmax(50px);
+            grid-template-columns: minmax(100px);
+            position: relative;
+            top: 50px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        h6 {
+            position: relative;
+            bottom: 15px;
+            left: 3px;
+        }
+
+        .search {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+            top: 20px;
+        }
+
+        .search-value {
+            padding: 8px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            
+        }
+
+        .search__btn {
+            color: #aaa; 
+            border: 1px solid #aaa;
+            background: transparent; 
+            margin: 7px 0;
+            border-radius: 20px; 
+            padding: 8px;      
+            text-align: center;
+            display: inline-block;      
+            font-size: 14px;
+            text-transform: uppercase;
+            position: relative;
+            right: 22px;
+            top: 2px;
+        }
+
+        .results {
+            position: relative;
+            bottom: 130px;
+            left: 10px;
+        }
+
+        .giff__url {
+            font-family: 'Rubik', sans-serif;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- SEARCH INPUT AND BUTTON -->
+        <div class="cell-1"><!--FILLER--></div>
+
+        <div class="cell-2">
+            <div class="titles">
+                <div class ="title">
+                    <span>
+                        <h1>Giffy</h1>
+                    </span>
+                </div>
+                <div>
+                    <h6>Powered By GIPHY</h6>
+                </div>
+                <div class ="desc">
+                    <span>Find and share gifs with friends :)</span>
+                </div>
+            </div>
+            <div class="search">
+                    <div class="search__input">
+                        <input type="text" class="search-value" placeholder="find gifs ...">
+                    </div>
+                    <div class="search__btn__">
+                        <button class="btn search__btn" type="submit">Search</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="cell-3"><!--FILLER--></div>
+        <div class="cell-4"><!--FILLER--></div>
+
+         <!-- GIF RESULT -->
+        <div class="cell-5">
+            <div class="results">
+                <lu class="results_list">
+                    <!-- <li>
+                        <span>Giphy Title</span>
+                        <img src="https://media0.giphy.com/media/EVnM2IJ9u5lEA/giphy.gif" alt="giphy title">
+                    </li> -->
+                </lu>
+            </div>
+        </div>
+
+        <div class="cell-6"><!--FILLER--></div>
+        <div class="cell-7"><!--FILLER--></div>
+        <div class="cell-8"><!--FILLER--></div>
+        <div class="cell-9"><!--FILLER--></div>
+    </div>
+</body>
+</html>
